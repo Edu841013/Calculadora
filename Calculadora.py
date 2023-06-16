@@ -108,8 +108,8 @@ class Pycalc(Frame):
         self.zeroButton.grid(row=5, column=1, sticky="nsew")
         self.decimalButton = Button(self, font=("Arial", 12), fg='black', text=".", highlightbackground='lightgrey', command=lambda: self.append("."))
         self.decimalButton.grid(row=5, column=2, sticky="nsew")
-        self.igualsButton = Button(self, font=("Arial", 12), fg='red', text="=", highlightbackground='lightgrey', command=lambda: self.evaluate())
-        self.igualsButton.grid(row=5, column=3, sticky="nsew")
+        self.equalsButton = Button(self, font=("Arial", 12), fg='red', text="=", highlightbackground='lightgrey', command=lambda: self.evaluate())
+        self.equalsButton.grid(row=5, column=3, sticky="nsew")
 
 Calculator = Tk()
 Calculator.title("Calculadora")
